@@ -17,7 +17,7 @@ namespace Anti__Bot
         MersenneTwister rand = new MersenneTwister();
         DiceInfo diceInfo = new DiceInfo();
 
-        public DiceInfo DiceThrower(bool telegram, params string[] diceConfig)
+        public DiceInfo DiceThrower(bool telegram = false, params string[] diceConfig)
         {
             try
             {
