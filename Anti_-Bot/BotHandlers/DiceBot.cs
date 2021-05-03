@@ -249,8 +249,6 @@ namespace Anti__Bot
                         DiceThrower(true, message.ToArray());
                     }
 
-
-
                     await Program.telegramBotClient.AnswerInlineQueryAsync
                         (
                             e.InlineQuery.Id,

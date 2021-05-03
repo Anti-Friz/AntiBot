@@ -70,6 +70,15 @@ namespace Anti__Bot.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GURPS is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. This game aid is the original creation of AntiFriz (Yaroslav Todorov) and is released for free distribution, and not for resale, under the permissions granted in the Steve Jackson Games Online Policy..
+        /// </summary>
+        internal static string Disclaimer {
+            get {
+                return ResourceManager.GetString("Disclaimer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1590153722:AAESGMjjzMX0qnrIKwiXkKbxsAH4pcikXNk.
         /// </summary>
         internal static string Telegram_Bot {

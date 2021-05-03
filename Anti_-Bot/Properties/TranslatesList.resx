@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="3edCops1" xml:space="preserve">
+    <value>Cops in GURPS</value>
+  </data>
+  <data name="3edCops1Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1XhJKGJYgkMQBUawQC7VA0ql44jbus7wf/view</value>
+  </data>
+  <data name="CityStats" xml:space="preserve">
+    <value>GURPS City Stats</value>
+  </data>
+  <data name="CityStatsLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1YTxx5no5S4Cv2nlxt9MdPZxeClrd1nFD/view</value>
+  </data>
+  <data name="DesNotesSpace1" xml:space="preserve">
+    <value>Designer's Notes GURPS Spaceships</value>
+  </data>
+  <data name="DesNotesSpace1Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1PjSfybiB7O1yZ6gH58PFt_LivTToafZW/view</value>
+  </data>
+  <data name="HomeRuleBrandLoyalty" xml:space="preserve">
+    <value>Brand Loyalty</value>
+  </data>
+  <data name="HomeRuleBrandLoyaltyExp" xml:space="preserve">
+    <value>Brand Loyalty Death Blockers</value>
+  </data>
+  <data name="HomeRuleBrandLoyaltyExpLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/127QR0voyyfxHB3PwARoLrRQL2WEHolxs/view</value>
+  </data>
+  <data name="HomeRuleBrandLoyaltyLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1r30yH-kJXlA6nbtRuAV8NFo9_x0dBAxq/view</value>
+  </data>
+  <data name="HomeRulePassiveSensor" xml:space="preserve">
+    <value>Passive Visual Sensor Design System</value>
+  </data>
+  <data name="HomeRulePassiveSensorLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/0B2eXj-PYOUDMMXNCZnFpZVdMT3M/view</value>
+  </data>
+  <data name="HomeRulePowerArmorPowered" xml:space="preserve">
+    <value>Power Armor, Powered Up!</value>
+  </data>
+  <data name="HomeRulePowerArmorPoweredLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/19-up92U-TmJx5-bsSwIGW7kXSGOdH9gV/view</value>
+  </data>
+  <data name="HomeRuleUltraGear30mm" xml:space="preserve">
+    <value>Ultra-Tech Ultra-Gear 30mm Gyroc</value>
+  </data>
+  <data name="HomeRuleUltraGear30mmLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/11L2Hk5Fm0q9vPRwZsMCsyfHuyDOUClON/view</value>
+  </data>
+  <data name="HomeRuleUTElectroLaser" xml:space="preserve">
+    <value>Ultra-Tech Ultra-Quickie Electrolaser Design</value>
+  </data>
+  <data name="HomeRuleUTElectroLaserLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1bHKVSzTidr5Gvd6IgquxIriDQRrOb1gY/view</value>
+  </data>
+  <data name="MassCombat" xml:space="preserve">
+    <value>GURPS Mass Combat</value>
+  </data>
+  <data name="MassCombatLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1BqfQWBdRQO-7QHJtaV5Ev7kuX0N8EoYt/view</value>
+  </data>
+  <data name="Py103MadAsBones" xml:space="preserve">
+    <value>Mad as Bones</value>
+  </data>
+  <data name="Py103MadAsBonesLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1Ueh5O5u05dHhSqDuI2KYgWckNQLUr_bN/view</value>
+  </data>
+  <data name="Py103SSMalf" xml:space="preserve">
+    <value>Spaceship Malfunctions</value>
+  </data>
+  <data name="Py103SSMalfLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/13IFOJri4C7J4PE4_moFGnhijzX5uXcTT/view</value>
+  </data>
+  <data name="Py111AnimalCombat" xml:space="preserve">
+    <value>Animal Combat</value>
+  </data>
+  <data name="Py111AnimalCombatLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1ldDBvJOEaYl6iHrTAybjYRXo7fb7IgED/view</value>
+  </data>
+  <data name="Py34AlternateSS" xml:space="preserve">
+    <value>Alternate Spaceships</value>
+  </data>
+  <data name="Py34AlternateSSLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/11LQfpeSjSwDu_K0pWRzq9_4UBf0zfqyk/view</value>
+  </data>
+  <data name="Py37BLDesign" xml:space="preserve">
+    <value>Blaster And Laser Design</value>
+  </data>
+  <data name="Py37BLDesignLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1wvUfX9JAOiK9UpSikegcnOX4uusrmFb8/view</value>
+  </data>
+  <data name="Py37ThinkingMachines" xml:space="preserve">
+    <value>Thinking Machines</value>
+  </data>
+  <data name="Py37ThinkingMachinesLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/0B2eXj-PYOUDMUzAxRVdId2pENjg/view</value>
+  </data>
+  <data name="Py44LastGasp" xml:space="preserve">
+    <value>The Last Gasp</value>
+  </data>
+  <data name="Py44LastGaspLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1pvNzTdfV2bmMcV3i88gerQCunqOAV1GZ/view</value>
+  </data>
+  <data name="Py52LTArmorDesign" xml:space="preserve">
+    <value>Low-Tech Armor Design</value>
+  </data>
+  <data name="Py52LTArmorDesignLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/0B2eXj-PYOUDMeDR3VUl4elpkc1k/view</value>
+  </data>
+  <data name="Py65AlternateGuns" xml:space="preserve">
+    <value>Alternate Guns Specialties And Techniques</value>
+  </data>
+  <data name="Py65AlternateGunsLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1gW5do2k6xT0lDlTRS6CNFsBzNIcyp8m_/view</value>
+  </data>
+  <data name="Py65EverymanTask" xml:space="preserve">
+    <value>Everyman Tasks</value>
+  </data>
+  <data name="Py65EverymanTaskLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1mUJLDKsSYpMdQTSN5civgHLwIXm7NWUB/view</value>
+  </data>
+  <data name="Py65FullCmplement" xml:space="preserve">
+    <value>А Full Complement</value>
+  </data>
+  <data name="Py65FullCmplementLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/19HqOISDZ7Bp05hFkcyMK5SlPEcuKnph_/view</value>
+  </data>
+  <data name="Py85HTArmorDesign" xml:space="preserve">
+    <value>Cutting-Edge Armor Design</value>
+  </data>
+  <data name="Py85HTArmorDesignLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/0B2eXj-PYOUDMWEc4UGJBdmVJS2c/view</value>
+  </data>
+  <data name="Py96UTArmorDesign" xml:space="preserve">
+    <value>Ultra-Tech Armor Design</value>
+  </data>
+  <data name="PyFreeBasicCyber" xml:space="preserve">
+    <value>Basic Cybernetics for GURPS Fourth Edition</value>
+  </data>
+  <data name="PyFreeBasicCyberLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1PrN7pYR8uKUdpI-038CuiCS-SHiYU3vY/view</value>
+  </data>
+  <data name="PyFreeBuzzkill" xml:space="preserve">
+    <value>Buzzkill</value>
+  </data>
+  <data name="PyFreeBuzzkillLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1VyYTCDiS7WSBX1is_ieSbUyjo6F1MV-z/view</value>
+  </data>
+  <data name="PyFreeDesNotesUltraTech" xml:space="preserve">
+    <value>Designer's Notes GURPS Ultra-Tech</value>
+  </data>
+  <data name="PyFreeDesNotesUltraTechLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1VyYTCDiS7WSBX1is_ieSbUyjo6F1MV-z/view</value>
+  </data>
+  <data name="PyFreeInterview" xml:space="preserve">
+    <value>GURPS Accelerator Interview-Based Character Creation</value>
+  </data>
+  <data name="PyFreeInterviewLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/15ihbCkPvbZMon4_rXQ9Vz440bu4lIW48/view</value>
+  </data>
+  <data name="Space1" xml:space="preserve">
+    <value>GURPS Spaceships 1</value>
+  </data>
+  <data name="Space1Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/0B2eXj-PYOUDMYURYUnQ4SlZnOWs/view</value>
+  </data>
+  <data name="Space2" xml:space="preserve">
+    <value>GURPS Spaceships 2</value>
+  </data>
+  <data name="Space2Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1fHCUTDZG-5DgPuKT60Av-GowK3xoQsSV/view</value>
+  </data>
+  <data name="Space3" xml:space="preserve">
+    <value>GURPS Spaceships 3</value>
+  </data>
+  <data name="Space3Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1Z8aRcLnbpmp6c9Ln52I812UrH7omwFes/view</value>
+  </data>
+  <data name="Space4" xml:space="preserve">
+    <value>GURPS Spaceships 4</value>
+  </data>
+  <data name="Space4Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1Zu9fwgLShQfnT16-OXByQOcNmyznnw_J/view</value>
+  </data>
+  <data name="Space5" xml:space="preserve">
+    <value>GURPS Spaceships 5</value>
+  </data>
+  <data name="Space6" xml:space="preserve">
+    <value>GURPS Spaceships 6</value>
+  </data>
+  <data name="Space6Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1UP_rMad1XPXugu06VtjSm52LjRGOEsQo/view</value>
+  </data>
+  <data name="Space7" xml:space="preserve">
+    <value>GURPS Spaceships 7</value>
+  </data>
+  <data name="Space7Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1UP_rMad1XPXugu06VtjSm52LjRGOEsQo/view</value>
+  </data>
+  <data name="Space8" xml:space="preserve">
+    <value>GURPS Spaceships 8</value>
+  </data>
+  <data name="Space8Link" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1Xm127ccnm83yQVgfZolN2bBB9Gh67XSM/view</value>
+  </data>
+  <data name="SpaceLink" xml:space="preserve">
+    <value>https://drive.google.com/file/d/1sdisYrZX7tFl4mF-4lkbaPxHH4EC3-iJ/view</value>
+  </data>
+</root>

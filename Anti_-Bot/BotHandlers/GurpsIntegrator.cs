@@ -12,6 +12,7 @@ using Telegram.Bot.Types.InlineQueryResults;
 using GURPSLib;
 using GURPSLib.Types;
 using Tababular;
+using Anti__Bot.Properties;
 
 namespace Anti__Bot
 {
@@ -23,7 +24,7 @@ namespace Anti__Bot
 
         [Command("randomBeam")]
         [Aliases("случайноеЛучевое", "рандомноеЛучевое", "рл")]
-        public async Task SendRandomBeamWeapon(CommandContext ctx)
+        public async Task SendRandomBeamWeapon(CommandContext ctx, params string[] options)
         {
             try
             {
@@ -31,25 +32,33 @@ namespace Anti__Bot
                 weapon = bLDesign.GetRandomBeamWeapon();
                 formatter = new TableFormatter();
                 string deffaults = string.Format("");
+                GurpsWeapon weaponResult = new GurpsWeapon(
+                            weapon.TL.TL,
+                            weapon.Name,
+                            weapon.Damage,
+                            weapon.WeaponBaseProps.FullAcc,
+                            weapon.WeaponBaseProps.Range,
+                            weapon.Weight,
+                            weapon.WeaponBaseProps.FullRoF,
+                            weapon.WeaponBaseProps.ShotsFull,
+                            weapon.WeaponBaseProps.ST,
+                            weapon.WeaponBaseProps.Bulk.ToString(),
+                            weapon.WeaponBaseProps.Recoil.ToString(),
+                            weapon.Cost,
+                            weapon.LC.ToString());
 
-                var result = new[]
+                List<GurpsWeapon> result = new List<GurpsWeapon>();
+
+                if (options != null && (options[0] == "верт" || options[0] == "в" || options[0] == "vert" || options[0] == "v"))
                 {
+                    result.Add(weaponResult);
+                }
+                else
+                {
+                    result.Add(weaponResult);
+                }
 
-                    new GurpsWeapon(
-                        weapon.TL.TL,
-                        weapon.Name,
-                        weapon.Damage,
-                        weapon.WeaponBaseProps.FullAcc,
-                        weapon.WeaponBaseProps.Range,
-                        weapon.Weight,
-                        weapon.WeaponBaseProps.FullRoF,
-                        weapon.WeaponBaseProps.ShotsFull,
-                        weapon.WeaponBaseProps.ST,
-                        weapon.WeaponBaseProps.Bulk.ToString(),
-                        weapon.WeaponBaseProps.Recoil.ToString(),
-                        weapon.Cost,
-                        weapon.LC.ToString())
-                };
+                
 
                 foreach (var item in weapon.WeaponBaseProps.Defaults)
                 {
@@ -61,11 +70,32 @@ namespace Anti__Bot
             }
             catch (Exception e)
             {
+                await ctx.RespondAsync($"```\nЧто-то пошло не так.```");
                 Console.WriteLine(e.Message);
             }
             
         }
 
+
+
+
+
+
+
+
+        [Command("disclaimer")]
+        public async Task SendDisclaimer(CommandContext ctx)
+        {
+            try
+            {
+                await ctx.RespondAsync(Resources.Disclaimer);
+            }
+            catch (Exception e)
+            {
+                await ctx.RespondAsync($"```\nЧто-то пошло не так.```");
+                Console.WriteLine(e.Message);
+            }
+        }
 
     }
 }
