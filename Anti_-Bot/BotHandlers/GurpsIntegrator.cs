@@ -29,8 +29,12 @@ namespace Anti__Bot
             try
             {
                 bLDesign = new BLDesign();
+
+
+                
+                formatter = new TableFormatter();            
+
                 weapon = bLDesign.GetRandomBeamWeapon();
-                formatter = new TableFormatter();
                 string deffaults = string.Format("");
                 GurpsWeapon weaponResult = new GurpsWeapon(
                             weapon.TL.TL,
@@ -49,16 +53,19 @@ namespace Anti__Bot
 
                 List<GurpsWeapon> result = new List<GurpsWeapon>();
 
-                if (options != null && (options[0] == "верт" || options[0] == "в" || options[0] == "vert" || options[0] == "v"))
-                {
-                    result.Add(weaponResult);
-                }
-                else
-                {
-                    result.Add(weaponResult);
-                }
+                //if (options[0] != null)
+                //{
+                //    if (options[0] == "верт" || options[0] == "в" || options[0] == "vert" || options[0] == "v")
+                //    {
+                //        result.Add(weaponResult);
+                //    }
+                //}
+                //else
+                //{
+                //    result.Add(weaponResult);
+                //}
+                result.Add(weaponResult);
 
-                
 
                 foreach (var item in weapon.WeaponBaseProps.Defaults)
                 {
@@ -77,25 +84,6 @@ namespace Anti__Bot
         }
 
 
-
-
-
-
-
-
-        [Command("disclaimer")]
-        public async Task SendDisclaimer(CommandContext ctx)
-        {
-            try
-            {
-                await ctx.RespondAsync(Resources.Disclaimer);
-            }
-            catch (Exception e)
-            {
-                await ctx.RespondAsync($"```\nЧто-то пошло не так.```");
-                Console.WriteLine(e.Message);
-            }
-        }
 
     }
 }
