@@ -7,17 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DSharpPlus" Version="4.0.0" />
-    <PackageReference Include="DSharpPlus.CommandsNext" Version="4.0.0" />
-    <PackageReference Include="DSharpPlus.Interactivity" Version="4.0.0" />
-    <PackageReference Include="MathNet.Numerics" Version="4.15.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
-    <PackageReference Include="Tababular" Version="4.0.0" />
-    <PackageReference Include="Telegram.Bot" Version="15.7.1" />
+    <PackageReference Include="DSharpPlus" Version="4.2.0" />
+    <PackageReference Include="DSharpPlus.CommandsNext" Version="4.2.0" />
+    <PackageReference Include="DSharpPlus.Interactivity" Version="4.2.0" />
+    <PackageReference Include="DSharpPlus.Rest" Version="4.2.0" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Soyvolon.DSharpPlus.SlashCommands" Version="0.5.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    <PackageReference Include="Tababular" Version="4.1.0" />
+    <PackageReference Include="Telegram.Bot" Version="18.0.0-alpha.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Libraries\GURPSLib\GURPSLib.csproj" />
+    <ProjectReference Include="..\..\..\Libraries\GURPSLib\AntiFriz_GURPS_Lib\AntiFriz_GURPS_Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

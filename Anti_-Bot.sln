@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anti_-Bot", "Anti_-Bot\Anti_-Bot.csproj", "{2031CBCE-7ED2-473F-9341-06AB211F387A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GURPSLib", "..\..\Libraries\GURPSLib\GURPSLib.csproj", "{07E49504-6AEF-46BC-A452-C162078353ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntiFriz_GURPS_Lib", "..\..\Libraries\GURPSLib\AntiFriz_GURPS_Lib\AntiFriz_GURPS_Lib.csproj", "{4427CBE6-FED0-424F-A07A-8189418EE16A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{2031CBCE-7ED2-473F-9341-06AB211F387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2031CBCE-7ED2-473F-9341-06AB211F387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2031CBCE-7ED2-473F-9341-06AB211F387A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07E49504-6AEF-46BC-A452-C162078353ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07E49504-6AEF-46BC-A452-C162078353ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07E49504-6AEF-46BC-A452-C162078353ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07E49504-6AEF-46BC-A452-C162078353ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4427CBE6-FED0-424F-A07A-8189418EE16A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4427CBE6-FED0-424F-A07A-8189418EE16A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4427CBE6-FED0-424F-A07A-8189418EE16A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4427CBE6-FED0-424F-A07A-8189418EE16A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

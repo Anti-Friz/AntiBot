@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Anti__Bot
+﻿namespace Anti__Bot
 {
     public class GurpsWeapon
     {
@@ -34,10 +28,8 @@ namespace Anti__Bot
 
         public string LC { get; set; }
 
-
         public GurpsWeapon()
         {
-
         }
 
         public GurpsWeapon(string tL, string weapon, string damage, string acc, string range, string weight, string roF, string shots, string sT, string bulk, string rcl, string cost, string lC)

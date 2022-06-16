@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Anti__Bot
+﻿namespace Anti__Bot
 {
     public class DiceInfo
     {
@@ -28,6 +22,5 @@ namespace Anti__Bot
 
         // Result----------------------------------
         public string Result { get; set; }
-
     }
 }

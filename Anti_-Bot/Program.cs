@@ -1,61 +1,67 @@
-﻿using Anti__Bot.Properties;
-using DSharpPlus;
-using DSharpPlus.CommandsNext;
-using DSharpPlus.Entities;
-using DSharpPlus.EventArgs;
-using DSharpPlus.Interactivity;
-using GURPSLib;
-using GURPSLib.Types;
-using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
-using System;
-using System.Reflection;
+﻿using Anti__Bot.Bots;
 using System.Threading.Tasks;
-using Tababular;
-using Telegram.Bot;
-using Telegram.Bot.Args;
 
 namespace Anti__Bot
 {
-    class Program
+    internal class Program
     {
-        internal static ITelegramBotClient telegramBotClient = null;
+        //internal static ITelegramBotClient telegramBotClient = null;
 
-        static async Task MainAsync()
+        private static async Task MainAsync()
         {
-            // ===================   Discord   ===================
-            DiscordClient discord = new DiscordClient(
-                new DiscordConfiguration()
-                {
-                    Token = Resources.Bot_Token,
-                    TokenType = TokenType.Bot
-                });
-            
+            #region ===================   Discord   ===================
 
-            CommandsNextExtension commands = discord.UseCommandsNext(new CommandsNextConfiguration()
-                {
-                    StringPrefixes = new[] { "!", "Бот, ", "бот, ", ".", "бот ", "Бот " }
-                });
+            //https://github.com/Soyvolon/DSharpPlus.SlashCommands
 
-            commands.RegisterCommands(Assembly.GetExecutingAssembly());
+            //DiscordClient discord = new DiscordClient(
+            //    new DiscordConfiguration()
+            //    {
+            //        Token = Resources.Bot_Token,
+            //        TokenType = TokenType.Bot
+            //    });
 
-            await discord.ConnectAsync();
+            //CommandsNextExtension commands = discord.UseCommandsNext(new CommandsNextConfiguration()
+            //    {
+            //        StringPrefixes = new[] { "!", "Бот, ", "бот, ", ".", "бот ", "Бот ", ">", "/" }
+            //    });
+
+            //commands.RegisterCommands(Assembly.GetExecutingAssembly());
+
+            //await discord.ConnectAsync();
+
+            #endregion ===================   Discord   ===================
 
             // ===================   Telegram   ===================
-            telegramBotClient = new TelegramBotClient(Resources.Telegram_Bot);
-            Telegram.Bot.Types.User me = telegramBotClient.GetMeAsync().Result;
-            telegramBotClient.OnMessage += new DiceBot().ThrowDice;
-            telegramBotClient.OnInlineQuery += new DiceBot().ThrowDice;
-            telegramBotClient.StartReceiving();
+            //telegramBotClient = new TelegramBotClient(Resources.Telegram_Bot);
 
+            TGBot telegramBotHandler = new TGBot();
+            await telegramBotHandler.StartBotAsync();
+
+            //QueuedUpdateReceiver updateReceiver = new QueuedUpdateReceiver(telegramBotClient);
+            //updateReceiver.StartReceiving();
+
+            //await foreach (Update update in updateReceiver)
+            //{
+            //    if (update.Message is Message message)
+            //    {
+            //        await telegramBotClient.SendTextMessageAsync(
+            //            message.Chat,
+            //            $"Still have to process {updateReceiver.PendingUpdates} updates"
+            //        );
+            //    }
+            //}
+
+            //Telegram.Bot.Types.User me = telegramBotClient.GetMeAsync().Result;
+            //telegramBotClient.OnMessage += new DiceBot().ThrowDice;
+            //telegramBotClient.OnInlineQuery += new DiceBot().ThrowDice;
+            //telegramBotClient.StartReceiving();
 
             await Task.Delay(-1);
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            MainAsync().GetAwaiter().GetResult();            
+            MainAsync().GetAwaiter().GetResult();
         }
-
     }
 }
