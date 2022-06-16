@@ -61,7 +61,7 @@ namespace Anti__Bot.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ODMxNTE4NzE2NjA4MjQ5OTI2.YHWaJg.JPpW8OsZwzqBusH1wxMuXv1p5rI.
+        ///   Looks up a localized string similar to null.
         /// </summary>
         internal static string Bot_Token {
             get {
@@ -79,7 +79,7 @@ namespace Anti__Bot.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1590153722:AAESGMjjzMX0qnrIKwiXkKbxsAH4pcikXNk.
+        ///   Looks up a localized string similar to null.
         /// </summary>
         internal static string Telegram_Bot {
             get {
